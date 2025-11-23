@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Missing viewport meta for responsive -->
+    <title>Mukul Kumar Portfolio</title> 
+
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333; /* Error: missing semicolon before color */
+        }
+
+        /* Header Section */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 50px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* About Me */
+        #about p {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* Skills */
+        #skills ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        #skills li {
+            background-color: #4CAF50;
+            color: white;
+            margin: 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        /* Projects */
+        #projects .project-card {
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 500px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+
+        /* Contact */
+        #contact form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #contact input, #contact textarea {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;;
+            border: 1px solid #ccc;
+        }
+
+        #contact button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #contact button:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Mukul Kumar</h1>
+        <nav>
+            <a href="#about">About Me</a> <!-- Error: closing tag wrong -->
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I am Mukul, a B.Tech student passionate about Web Development 
+            and designing amazing web experiences. I love coding and creating projects that solve real-world problems.</p>
+    </section> <!-- Error: closing p tag missing '>' -->
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li> <!-- Error: missing closing li tag -->
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>A responsive personal portfolio website built with HTML, CSS, and JavaScript.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Todo App</h3>
+            <p>A simple JavaScript Todo app to manage daily tasks with local storage.</p>
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message<button> <!-- Error: closing tag wrong -->
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Mukul Kumar. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
