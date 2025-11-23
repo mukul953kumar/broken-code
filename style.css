@@ -1,0 +1,15 @@
+body {
+    font-family: Arial;
+}
+
+.title {
+    color: blue;
+    font-size: 40px;
+    /* missing semicolon */
+}
+
+nav ul {
+    display:flex;
+    gap:20px;
+    background:#eee;
+}
