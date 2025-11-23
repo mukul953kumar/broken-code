@@ -1,3 +1,3 @@
-document.querySelector("#btn").addEventListener("click", function(){
-    alert("Button working!");
+document.querySelector("#mukul").addEventListener("click", function(){
+    alert("Hello!");
 });
